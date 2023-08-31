@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      dropShadow: {
+        'custom': '0 0 15px #424242',
+      },
+      fontFamily: {
+        'body': ['Montserrat', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }

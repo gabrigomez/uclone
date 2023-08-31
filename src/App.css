@@ -1,3 +1,14 @@
 body {
   max-height: 100vh;
 }
+
+.banner {
+  position: absolute;
+  left: 50%;
+  transform: translate3d(-50%, -194.868px, 0px);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  height: 1002px;
+  width: auto;
+  filter: none;
+}

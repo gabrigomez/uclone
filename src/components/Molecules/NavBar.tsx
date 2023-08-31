@@ -1,5 +1,5 @@
 import { Logo } from "../Atoms/Logo";
-import { FiMenu } from "react-icons/fi"
+import { FiMenu } from "react-icons/fi";
 
 export const NavBar = () => {
   return (
