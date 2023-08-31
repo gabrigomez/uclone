@@ -4,7 +4,7 @@ import { Main } from './components/Organisms/Main';
 
 function App() {
   return (
-    <div className='font-body'>
+    <div className='h-full'>
       <NavBar />
       <Main />
     </div>

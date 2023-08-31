@@ -1,5 +1,15 @@
-body {
-  max-height: 100vh;
+html { 
+  height: 100%;
+} 
+ 
+body{
+  height: 100%;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#root {
+  height: 100vh;
 }
 
 .banner {
@@ -11,4 +21,20 @@ body {
   height: 1002px;
   width: auto;
   filter: none;
+}
+
+.searchEvent {
+  background-color: #fff;
+  min-height: 50px;
+
+  margin-top: -25px;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+
+  box-shadow: 0 4px 15px 0 rgba(40,44,53,.06),0 2px 2px 0 rgba(40,44,53,.08);
 }
