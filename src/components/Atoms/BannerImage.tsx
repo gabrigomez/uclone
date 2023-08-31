@@ -4,7 +4,7 @@ import '../../App.css';
 export const BannerImage = () => {
   return (
     <img
-      className="banner overflow-hidden" 
+      className="banner overflow-hidden max-w-max" 
       src={banner} 
       alt=""     
     />

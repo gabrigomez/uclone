@@ -6,6 +6,7 @@ body{
   height: 100%;
   position: relative;
   font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
 }
 
 #root {
@@ -17,9 +18,10 @@ body{
   left: 50%;
   transform: translate3d(-50%, -194.868px, 0px);
   transform-style: preserve-3d;
+  
   backface-visibility: hidden;
   height: 1002px;
-  width: auto;
+  width: 1500px;
   filter: none;
 }
 
