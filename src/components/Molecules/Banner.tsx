@@ -3,7 +3,7 @@ import { BannerText } from "../Atoms/BannerText";
 
 export const Banner = () => {
   return (
-    <div className="w-full overflow-hidden relative">
+    <div className="flex justify-center overflow-hidden relative">
       <BannerImage />
       <BannerText />
     </div>

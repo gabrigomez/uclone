@@ -15,7 +15,7 @@ export const Footer = () => {
           Falar com consultor
         </button>
       </div>
-      <div className="mx-3 text-gray-700">
+      <div className="flex flex-col xl:flex-row mx-3 xl:m-auto xl:w-[1200px] xl:h-[500px] text-gray-700">
         <div className="relative w-full h-[500px]">
           <div className="absolute p-1 top-0 w-[301px] z-20 h-[615px] rounded-[42px] shadow-2xl bg-slate-100">
             <img
@@ -31,7 +31,7 @@ export const Footer = () => {
               alt="" 
             />
           </div>
-        </div>
+        </div>        
         <div className="mt-44">
           <p className="text-center text-3xl mb-10">
             <b>É rápido</b>, fácil e grátis
@@ -75,7 +75,7 @@ export const Footer = () => {
               </p>
             </div>
           </div>
-        </div>
+        </div>        
       </div>
     </footer>
   )
