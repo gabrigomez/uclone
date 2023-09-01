@@ -17,7 +17,7 @@ export const Events = () => {
         <EventItem />
         <EventItem />
       </div>
-      <button className="w-11/12 mt-4 p-2 rounded-full border border-sky-500 hover:bg-sky-300 text-sky-600 duration-200">
+      <button className="w-full mt-4 p-2 rounded-full border border-sky-500 hover:bg-sky-300 text-sky-600 duration-200">
         Carregar mais eventos
       </button>
     </div>
