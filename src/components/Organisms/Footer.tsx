@@ -19,7 +19,7 @@ export const Footer = () => {
           Falar com consultor
         </button>
       </div>
-      <div className="flex flex-col pb-44 lg:flex-row-reverse mx-3 xl:m-auto xl:footerMargin text-gray-700">
+      <div className="flex flex-col lg:pb-44 lg:flex-row-reverse mx-3 xl:m-auto xl:footerMargin text-gray-700">
         <div className="relative w-full h-[500px]">
           <div className="absolute p-1 top-0 w-[301px] z-20 h-[615px] rounded-[42px] shadow-2xl bg-slate-100">
             <img
