@@ -14,15 +14,15 @@ export const EventItem = ({...props}: EventItemProps) => {
         {props.price}
       </div>
       <img 
-        className="flex items-center font-bold justify-center text-white absolute right-5 bottom-20 border-4 border-white bg-black rounded-full w-14 h-14"
+        className="flex items-center font-bold justify-center text-white absolute right-5 bottom-24 border-4 border-white bg-black rounded-full w-14 h-14"
         src={props.avatar}
       />
       <img 
         className="bg-red-500 h-[160px] rounded-md" 
         src={props.img}
       />      
-      <div className="flex flex-col h-2/5 px-3 py-2">
-        <p className="font-bold text-lg">
+      <div className="flex flex-col h-2/5 px-3 py-4">
+        <p className="font-bold text-md lg:text-lg">
           {props.name}
         </p>
         <p className="text-md text-sky-500">
