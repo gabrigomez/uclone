@@ -33,12 +33,12 @@ export const Footer = () => {
           </div>
         </div>        
         <div className="mt-44 lg:mt-0 max-w-[500px] lg:mr-6">
-          <p className="text-3xl mb-10">
+          <p className="text-3xl text-center lg:text-start mb-10">
             <b>É rápido</b>, fácil e grátis
           </p>
-          <div className="flex w-full mb-10">
-            <div className="iconsBackground bg-sky-600 w-[150px] h-[50px] rounded-md">
-              <FcIdea className="h-[24px] w-[24px]"/>
+          <div className="flex mb-10">
+            <div className="icons rounded-md">
+              <FcIdea className="text-2xl"/>
             </div>
             <div className="flex flex-col ml-4">
               <p className="text-lg font-bold">
@@ -50,8 +50,8 @@ export const Footer = () => {
             </div>
           </div>
           <div className="flex w-full mb-10">
-            <div className="iconsBackground bg-sky-600 w-[150px] h-[50px] rounded-md">
-              <FcNews className="h-[24px] w-[24px]" />
+            <div className="icons rounded-md">
+              <FcNews className="text-2xl" />
             </div>
             <div className="flex flex-col ml-4">
               <p className="text-lg font-bold">
@@ -63,8 +63,8 @@ export const Footer = () => {
             </div>
           </div>
           <div className="flex w-full mb-10">
-            <div className="iconsBackground bg-sky-600 w-[150px] h-[50px] rounded-md">
-              <FcComboChart className="h-[24px] w-[24px]" />
+            <div className="icons rounded-md">
+              <FcComboChart className="text-2xl" />
             </div>
             <div className="flex flex-col ml-4">
               <p className="text-lg font-bold">

@@ -19,4 +19,18 @@
     margin-bottom: auto;
     margin-left: auto;
   }
+
+  .icons {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    
+    justify-content: center;
+    background: linear-gradient(150deg, rgb(111, 98, 237) 15%, rgb(61, 167, 246) 90%);
+    width: 50px;
+    height: 50px;
+
+    flex-shrink: 0;
+  }
 }
