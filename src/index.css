@@ -33,4 +33,40 @@
 
     flex-shrink: 0;
   }
+
+  .footerStyle1 {
+    position: absolute;
+    width: 100%;
+    height: 461px;
+    overflow: hidden;
+    
+    transform: skewY(-5deg);
+    transform-origin: 0px center;
+    background: linear-gradient(150deg, rgb(85, 51, 255) 15%, rgb(5, 213, 255) 70%, rgb(166, 255, 203) 94%);
+    margin-top: calc((1rem) * -1);
+    
+    margin-left: 0px;
+    top: -100px;
+    z-index: -1;
+  }
+
+  .footerStyle2 {
+    position: absolute;
+    width: 14%;
+    right: 0px;
+    bottom: 40px;
+
+    background: rgb(43, 231, 255);
+    height: 40px;
+  }
+
+  .footerStyle3 {
+    position: absolute;
+    width: 25%;
+    bottom: 0px;
+    right: 0px;
+    
+    background: rgb(161, 255, 200);
+    height: 40px;
+  }
 }

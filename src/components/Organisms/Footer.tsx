@@ -6,8 +6,12 @@ import "../../App.css";
 
 export const Footer = () => {
   return (
-    <footer className="w-full xl:footerMargin">
-      <div className="flex flex-col items-center footerBackground pt-10 mb-44">
+    <footer className="w-full h-full overflow-hidden">
+      <div className="flex flex-col z-0 items-center footerBackground pt-10 mb-44 relative">
+        <div className="footerStyle1">
+          <span className="footerStyle2" />
+          <span className="footerStyle3" />
+        </div>
         <h1 className="text-2xl text-white font-bold text-center mb-10 mx-10">
           Publique e venda seus eventos na Plataforma Uticket
         </h1>
@@ -15,7 +19,7 @@ export const Footer = () => {
           Falar com consultor
         </button>
       </div>
-      <div className="flex flex-col lg:flex-row-reverse mx-3 xl:m-auto xl:h-[500px] text-gray-700">
+      <div className="flex flex-col lg:flex-row-reverse mx-3 xl:m-auto xl:h-[500px] xl:footerMargin text-gray-700">
         <div className="relative w-full h-[500px]">
           <div className="absolute p-1 top-0 w-[301px] z-20 h-[615px] rounded-[42px] shadow-2xl bg-slate-100">
             <img
