@@ -4,3 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer utilities {
+  .navBarMargin {
+    width: 1250px;
+    max-width: calc(100vw - 40px);
+    margin: auto;
+  }
+}
