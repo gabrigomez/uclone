@@ -11,4 +11,12 @@
     max-width: calc(100vw - 40px);
     margin: auto;
   }
+
+  .eventMargin {
+    width: 1280px;
+    max-width: calc(100vw - 1280);
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+  }
 }

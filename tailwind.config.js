@@ -12,6 +12,9 @@ export default {
       fontFamily: {
         'body': ['Montserrat', 'sans-serif'],
       },
+      screens: {
+        'xs': '460px',
+      },
     },
   },
   plugins: [],

@@ -1,6 +1,6 @@
 export const EventItem = () => {
   return (
-    <a className="flex flex-col w-full">
+    <a className="flex flex-col relative">
       <div className="absolute right-1 top-1 bg-slate-50 rounded-lg font-semibold text-sm p-1">
         R$30,00
       </div>
