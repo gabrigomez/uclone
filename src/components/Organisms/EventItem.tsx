@@ -4,7 +4,7 @@ export const EventItem = () => {
       <div className="absolute right-1 top-1 bg-slate-50 rounded-lg font-semibold text-sm p-1">
         R$30,00
       </div>
-      <div className="flex items-center font-bold justify-center text-white absolute right-5 bottom-32 border-4 border-white bg-black rounded-full w-14 h-14">
+      <div className="flex items-center font-bold justify-center text-white absolute right-5 bottom-20 border-4 border-white bg-black rounded-full w-14 h-14">
         G
       </div>
       <img 
