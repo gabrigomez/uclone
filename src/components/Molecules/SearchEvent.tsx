@@ -1,5 +1,4 @@
 import { CiLocationOn } from "react-icons/ci";
-import '../../App.css';
 
 export const SearchEvent = () => {
   return (

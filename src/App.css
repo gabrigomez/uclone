@@ -14,48 +14,6 @@ body {
   height: 100vh;
 }
 
-.banner {
-  position: absolute;
-  left: 50%;
-  transform: translate3d(-50%, -194.868px, 0px);
-  transform-style: preserve-3d;
-  
-  backface-visibility: hidden;
-  height: 1002px;
-  filter: none;
-}
-
-.searchEvent {
-  background-color: #fff;
-
-  margin-top: -25px;
-  z-index: 2;
-  position: absolute;
-  
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  box-shadow: 0 4px 15px 0 rgba(40,44,53,.06),0 2px 2px 0 rgba(40,44,53,.08); 
-}
-
-.footerBackground {  
-  background: linear-gradient(150deg, rgb(85, 51, 255) 15%, rgb(5, 213, 255) 70%, rgb(166, 255, 203) 94%);
-}
-
-.iconsBackground {
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-
-  justify-content: center;
-  background: linear-gradient(150deg, rgb(111, 98, 237) 15%, rgb(61, 167, 246) 90%);
-  box-shadow: var(--chakra-shadows-md);
- 
-  border-radius: var(--chakra-radii-lg);
-  margin-right: var(--chakra-space-4);
-}
-
 @media (min-width: 1500px) {
   .banner {
     width: 100vw; /* Preenche todo o width da viewport */

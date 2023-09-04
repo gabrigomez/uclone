@@ -2,8 +2,6 @@ import mobile from "../../assets/mobile.png";
 import desktop from "../../assets/desktop.png";
 import { FcIdea, FcNews, FcComboChart } from 'react-icons/fc';
 
-import "../../App.css";
-
 export const Footer = () => {
   return (
     <footer className="w-full overflow-hidden">
