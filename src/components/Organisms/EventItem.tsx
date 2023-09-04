@@ -9,20 +9,20 @@ export interface EventItemProps {
 
 export const EventItem = ({...props}: EventItemProps) => {
   return (
-    <a className="flex flex-col relative">
+    <a className="flex flex-col h-[300px] relative">
       <div className={`${props.price ? 'absolute right-1 top-1 bg-slate-50 rounded-lg font-semibold text-sm p-1' : ''}`}>
         {props.price}
       </div>
       <img 
         className="flex items-center font-bold justify-center text-white absolute 
-        right-5 bottom-24 xl:bottom-28 border-4 border-white bg-black rounded-full w-14 h-14"
+        right-5 bottom-32 border-4 border-white bg-black rounded-full w-14 h-14"
           src={props.avatar}
       />
       <img 
         className="bg-red-500 h-[160px] rounded-md" 
         src={props.img}
       />      
-      <div className="flex flex-col h-2/5 px-3 py-4">
+      <div className="flex flex-col h-12 px-3 py-4">
         <p className="font-bold text-md lg:text-lg">
           {props.name}
         </p>

@@ -12,7 +12,7 @@ const eventItems: EventItemProps[] = [
   {
     img: "https://img.freepik.com/premium-photo/beautiful-colourful-abstract-watercolour-splash-white-background_930198-711.jpg?w=2000",
     avatar: "https://img.freepik.com/free-vector/illustration-circle-stamp-banner-vector_53876-27183.jpg?w=360",
-    name: "Show de Rock: Queen Revival",
+    name: "Rock n' Concert: Queen Revival: The best so far",
     date: "Domingo, 3 setembro às 20:30",
     locale: "Rio de Janeiro, RJ"
   },
