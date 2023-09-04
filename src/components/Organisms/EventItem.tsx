@@ -1,3 +1,5 @@
+import { Price } from "../Atoms/Price"
+
 export interface EventItemProps {
   price?: string,
   img: string,
@@ -10,9 +12,7 @@ export interface EventItemProps {
 export const EventItem = ({...props}: EventItemProps) => {
   return (
     <a className="flex flex-col h-[300px] relative">
-      <div className={`${props.price ? 'absolute right-1 top-1 bg-slate-50 rounded-lg font-semibold text-sm p-1' : ''}`}>
-        {props.price}
-      </div>
+      <Price price={props.price} />
       <img 
         className="flex items-center font-bold justify-center text-white absolute 
         right-5 bottom-32 border-4 border-white bg-black rounded-full w-14 h-14"
