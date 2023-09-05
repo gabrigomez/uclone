@@ -5,6 +5,7 @@ import { Events } from "./Events";
 
 import { eventItems } from "../../data";
 import { EventItemProps } from "./EventItem";
+import { NoResult } from "../Atoms/NoResult";
 
 export const Main = () => {
   const [search, setSearch] = useState("");
@@ -24,9 +25,7 @@ export const Main = () => {
       {filteredResult.length > 0 ? (
         <Events events={filteredResult} />
       ) : (
-        <p className="mt-20 mx-3 xl:eventMargin relative text-center text-xl">
-          Nenhum evento encontrado
-        </p>
+        <NoResult />
       )}
     </main>
   )
