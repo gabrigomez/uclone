@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { EventItem, EventItemProps } from "./EventItem";
+import { Button } from "../Atoms/Button";
 
 interface EventsProps {
   events: Array<EventItemProps> | null
@@ -9,7 +10,7 @@ export const Events = ({events}: EventsProps) => {
   const [eventList, setEventList] = useState(events?.slice(0,5));
   const [loadCount, setLoadCount] = useState(5);
   
-  const [message, setMessage] = useState("Carregar mais eventos");
+  const [isOverEvents, setIsOverEvents] = useState(false);
 
   const loadMore = () => {
     setLoadCount(loadCount + 5);
@@ -17,7 +18,7 @@ export const Events = ({events}: EventsProps) => {
     if(eventList!.length < events!.length) {
       setEventList(events?.slice(0, loadCount + 5));
     } else {
-      setMessage("Todos os eventos carregados");
+      setIsOverEvents(true);
     }
   }
 
@@ -38,9 +39,19 @@ export const Events = ({events}: EventsProps) => {
           )
         })}
       </div>
-      <button onClick={loadMore} className="w-full mt-4 p-2 rounded-full border border-sky-500 hover:bg-sky-300 text-sky-600 duration-200">
-        {message}
-      </button>
+      {!isOverEvents ? (
+        <Button
+          onClick={loadMore}
+          text="Carregar mais eventos"
+          className="w-full mt-4 p-2 rounded-full border border-sky-500 hover:bg-sky-300 text-sky-600 duration-200"
+        />
+      ) : (
+        <Button
+          isDisabled={true}
+          text="Todos os eventos carregados"
+          className="w-full mt-4 p-2 rounded-full border border-gray-500 text-gray-600 duration-200"
+        />
+      )}
     </div>
   )
 }
