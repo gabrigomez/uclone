@@ -34,7 +34,9 @@ export const Main = () => {
   return (
     <main className="relative overflow-hidden pb-10">
       <Banner />
-      <SearchEvent func={pull_data} />
+      <SearchEvent 
+        func={pull_data} 
+      />
       {filteredResult.length > 0 ? (
         <Events 
           events={filteredResult} 
