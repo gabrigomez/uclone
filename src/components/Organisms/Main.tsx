@@ -8,15 +8,10 @@ import { EventItemProps } from "./EventItem";
 
 export const Main = () => {
   const [search, setSearch] = useState("");
-  const [data, setData] = useState<Array<EventItemProps> | null>(eventItems);
 
-  const onSubmit = () => {
-    const filteredResult = eventItems.filter((event: EventItemProps) =>
-      event.name.toLowerCase().includes(search.toLowerCase())
-    );
-
-    setData(filteredResult);
-  }
+  const filteredResult = eventItems.filter((event: EventItemProps) =>
+    event.name.toLowerCase().includes(search.toLowerCase())
+  );
 
   const pull_data = (data: string) => {
     setSearch(data);
@@ -25,11 +20,11 @@ export const Main = () => {
   return (
     <main className="relative overflow-hidden pb-10">
       <Banner />
-      <SearchEvent onClick={onSubmit} func={pull_data} />
-      {data ? (
-        <Events events={data} />
+      <SearchEvent func={pull_data} />
+      {filteredResult.length > 0 ? (
+        <Events events={filteredResult} />
       ) : (
-        <p>
+        <p className="mt-20 mx-3 xl:eventMargin relative text-center text-xl">
           Nenhum evento encontrado
         </p>
       )}

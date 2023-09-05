@@ -2,7 +2,7 @@ import { useState } from "react";
 import { CiLocationOn } from "react-icons/ci";
 
 interface SearchEventProps {
-  onClick: () => void;
+  onClick?: () => void;
   func: (value: string) => void;
 }
 
