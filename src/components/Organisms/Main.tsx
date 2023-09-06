@@ -13,6 +13,8 @@ export const Main = () => {
   const [loadCount, setLoadCount] = useState(5);  
   const [isOverEvents, setIsOverEvents] = useState(false);
 
+  const [nameSearch, setNameSearch] = useState(true);
+
   const loadMore = () => {
     setLoadCount(loadCount + 5);
     
@@ -23,19 +25,24 @@ export const Main = () => {
     }
   }
 
-  const filteredResult = eventList.filter((event: EventItemProps) =>
-    event.name.toLowerCase().includes(search.toLowerCase())
-  );
-
-  const pull_data = (data: string) => {
+  const pullSearch = (data: string) => {
     setSearch(data);
   };
+
+  const pullSearchType = (data: boolean) => {
+    setNameSearch(data);
+  };
+
+  const filteredResult = nameSearch
+  ? eventList.filter((event: EventItemProps) => event.name.toLowerCase().includes(search.toLowerCase()))
+  : eventList.filter((event: EventItemProps) => event.locale.toLowerCase().includes(search.toLowerCase()));
 
   return (
     <main className="relative overflow-hidden pb-10">
       <Banner />
       <SearchEvent 
-        func={pull_data} 
+        search={pullSearch}
+        searchType={pullSearchType} 
       />
       {filteredResult.length > 0 ? (
         <Events 

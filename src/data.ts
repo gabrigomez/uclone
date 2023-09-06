@@ -36,7 +36,7 @@ export const eventItems: EventItemProps[] = [
     avatar: "https://www.pngkey.com/png/detail/49-498343_glossy-blue-circle-clip-art-at-clker-blue.png",
     name: "Salsa: Ritmo Caliente",
     date: "Sexta-feira, 8 setembro às 17:45",
-    locale: "Fortaleza, CE",
+    locale: "Rio de Janeiro, RJ",
     price: "R$ 20,00"
   },
   {

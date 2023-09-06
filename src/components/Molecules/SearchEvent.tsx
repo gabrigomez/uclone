@@ -4,16 +4,21 @@ import { RiCloseCircleLine } from "react-icons/ri";
 
 interface SearchEventProps {
   onClick?: () => void;
-  func: (value: string) => void;
+  search: (value: string) => void;
+  searchType: (value: boolean) => void;
 }
 
 export const SearchEvent = ({...props} : SearchEventProps) => {
   const [search, setSearch] = useState("");
-  const [isCitySearch, setIsCitySearch] = useState(false);  
-  props.func(search);
+  const [isCitySearch, setIsCitySearch] = useState(false);
+  const [nameSearch, setNameSearch] = useState(true);
+
+  props.search(search);
+  props.searchType(nameSearch);
 
   const openCitySearch = () => {
     setIsCitySearch(!isCitySearch);
+    setNameSearch(!nameSearch);
   };
   
   return (
