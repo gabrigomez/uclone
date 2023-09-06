@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { CiLocationOn } from "react-icons/ci";
+import { RiCloseCircleLine } from "react-icons/ri";
 
 interface SearchEventProps {
   onClick?: () => void;
@@ -8,12 +9,17 @@ interface SearchEventProps {
 
 export const SearchEvent = ({...props} : SearchEventProps) => {
   const [search, setSearch] = useState("");
+  const [isCitySearch, setIsCitySearch] = useState(false);  
   props.func(search);
+
+  const openCitySearch = () => {
+    setIsCitySearch(!isCitySearch);
+  };
   
   return (
     <div className="searchEvent flex items-center justify-between rounded-full w-11/12 md:w-2/4 xl:w-3/5">
       <input 
-        className='rounded-full pl-5 w-full outline-none placeholder:text-gray-700'
+        className={`${isCitySearch ? 'w-0' : 'w-full pl-5'} rounded-full outline-none placeholder:text-gray-700`}
         type="text"
         placeholder="Buscar Evento" 
         name="Busca" 
@@ -21,14 +27,27 @@ export const SearchEvent = ({...props} : SearchEventProps) => {
         onChange={(e) => setSearch(e.target.value)}
       />
       <button
-        className='flex items-center bg-orange-400 hover:bg-orange-300 duration-300 rounded-full w-40 m-1 p-2'
-        onClick={props.onClick}
+        className={`${isCitySearch ? 'w-full' : 'hover:bg-orange-300'} flex bg-orange-400 items-center rounded-full duration-500 w-40 m-1 p-2`}        
       > 
-        <div className="flex items-center">
-          <CiLocationOn className="text-white mr-2" />
-          <span className='text-white'>
-            Todas
-          </span>
+        <div className={`${isCitySearch ? 'w-full flex items-center z-10' : ''} flex items-center justify-center`}>
+          <div className={`${isCitySearch ? 'hidden' : 'flex items-center'}`} onClick={openCitySearch}>
+            <CiLocationOn className="text-white mr-2" />
+            <span className='text-white'>
+              Todas
+            </span>
+          </div>
+          <div className={`${isCitySearch ? 'flex items-center w-full bg-orange-400' : 'hidden'}`}>
+            <input 
+              className={`${isCitySearch ? 'block w-full bg-orange-400 outline-none placeholder:text-white pl-2' : 'hidden'}`}
+              placeholder="Procure por sua cidade"
+              onChange={(e) => setSearch(e.target.value)}
+            />
+            <button onClick={openCitySearch}>
+              <RiCloseCircleLine 
+                className="text-3xl text-white"
+              />
+            </button>
+          </div>
         </div>
       </button>
     </div>
