@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { CiLocationOn } from "react-icons/ci";
-import { RiCloseCircleLine } from "react-icons/ri";
+import { CitySearch } from "../Organisms/CitySearch";
 
 interface SearchEventProps {
   onClick?: () => void;
@@ -33,27 +32,12 @@ export const SearchEvent = ({...props} : SearchEventProps) => {
       />
       <button
         className={`${isCitySearch ? 'w-full' : 'hover:bg-orange-300'} flex bg-orange-400 items-center rounded-full duration-500 w-40 m-1 p-2`}        
-      > 
-        <div className={`${isCitySearch ? 'w-full flex items-center z-10' : ''} flex items-center justify-center`}>
-          <div className={`${isCitySearch ? 'hidden' : 'flex items-center'}`} onClick={openCitySearch}>
-            <CiLocationOn className="text-white mr-2" />
-            <span className='text-white'>
-              Todas
-            </span>
-          </div>
-          <div className={`${isCitySearch ? 'flex items-center w-full bg-orange-400' : 'hidden'}`}>
-            <input 
-              className={`${isCitySearch ? 'block w-full bg-orange-400 outline-none placeholder:text-white pl-2' : 'hidden'}`}
-              placeholder="Procure por sua cidade"
-              onChange={(e) => setSearch(e.target.value)}
-            />
-            <button onClick={openCitySearch}>
-              <RiCloseCircleLine 
-                className="text-3xl text-white"
-              />
-            </button>
-          </div>
-        </div>
+      >
+        <CitySearch 
+          openCitySearch={openCitySearch}
+          setSearch={setSearch}
+          isCitySearch={isCitySearch}
+        />
       </button>
     </div>
   )
