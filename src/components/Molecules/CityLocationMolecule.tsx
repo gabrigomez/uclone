@@ -8,7 +8,7 @@ interface CityLocationMoleculeProps {
 
 export const CityLocationMolecule = ({isCitySearch, openCitySearch}: CityLocationMoleculeProps) => {
   return (
-    <div className={`${isCitySearch ? 'hidden' : 'flex items-center'}`} onClick={openCitySearch}>
+    <div className={`${isCitySearch ? 'hidden' : 'flex w-full items-center'}`} onClick={openCitySearch}>
       <CiLocationOn className="text-white mr-2" />
       <Text 
         className='text-white'

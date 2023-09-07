@@ -9,7 +9,7 @@ interface CitySearchProps {
 
 export const CitySearch = ({isCitySearch, openCitySearch, setSearch} : CitySearchProps) => {
   return (
-    <div className={`${isCitySearch ? 'w-full flex items-center z-10' : ''} flex items-center justify-center`}>
+    <div className={`${isCitySearch ? 'z-10' : ''} w-full flex items-center justify-start pl-2`}>
       <CityLocationMolecule 
         isCitySearch={isCitySearch}
         openCitySearch={openCitySearch}

@@ -30,9 +30,7 @@ export const SearchEvent = ({...props} : SearchEventProps) => {
         id="" 
         onChange={(e) => setSearch(e.target.value)}
       />
-      <button
-        className={`${isCitySearch ? 'w-full' : 'hover:bg-orange-300'} flex bg-orange-400 items-center rounded-full duration-500 w-40 m-1 p-2`}        
-      >
+      <button className={`${isCitySearch ? 'w-full' : 'hover:bg-orange-400 w-72'} flex bg-orange-500 items-center rounded-full duration-500  m-1 p-2`}>
         <CitySearch 
           openCitySearch={openCitySearch}
           setSearch={setSearch}

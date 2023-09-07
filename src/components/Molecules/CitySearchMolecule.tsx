@@ -8,9 +8,9 @@ interface CitySearchMoleculeProps {
 
 export const CitySearchMolecule = ({...props} : CitySearchMoleculeProps) => {
   return (
-    <div className={`${props.isCitySearch ? 'flex items-center w-full bg-orange-400' : 'hidden'}`}>
+    <div className={`${props.isCitySearch ? 'flex items-center w-full bg-orange-500 text-white' : 'hidden'}`}>
       <input 
-        className={`${props.isCitySearch ? 'block w-full bg-orange-400 outline-none placeholder:text-white pl-2' : 'hidden'}`}
+        className={`${props.isCitySearch ? 'block w-full bg-orange-500 outline-none placeholder:text-gray-200 pl-2' : 'hidden'}`}
         placeholder="Procure por sua cidade"
         onChange={(e) => props.setSearch(e.target.value)}
       />
