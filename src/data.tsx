@@ -1,6 +1,6 @@
-import { EventItemProps } from "./components/Organisms/EventItem";
+import { FcIdea, FcNews, FcComboChart } from 'react-icons/fc';
 
-export const eventItems: EventItemProps[] = [
+export const eventItems = [
   {
     img: "https://img.freepik.com/free-vector/flat-hand-drawn-psychedelic-groovy-background_23-2148850121.jpg?w=2000",
     avatar: "https://static.vecteezy.com/system/resources/previews/013/126/528/original/rounded-false-button-free-png.png",
@@ -113,4 +113,25 @@ export const eventItems: EventItemProps[] = [
     date: "Sábado, 23 setembro às 21:30",
     locale: "Cuiabá, MT"
   }
+];
+
+export const FooterCardItems = [
+  {
+    icon: <FcIdea className="text-2xl" />,
+    title: "Crie",
+    description:
+      "Em minutos você cria seu evento e cadastra seus ingressos ou inscrições online para vender.",
+  },
+  {
+    icon: <FcNews className="text-2xl" />,
+    title: "Publique",
+    description:
+      "Depois de criado, seu evento já está com vendas liberadas pelo nosso site e aplicativo.",
+  },
+  {
+    icon: <FcComboChart className="text-2xl" />,
+    title: "Venda",
+    description:
+      "Divulgue, acompanhe as vendas em tempo real, e receba direto em sua conta em apenas 2 dias.",
+  },
 ];
