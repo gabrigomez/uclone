@@ -1,21 +1,23 @@
 import mobile from "../../assets/mobile.png";
 import desktop from "../../assets/desktop.png";
 import { FcIdea, FcNews, FcComboChart } from 'react-icons/fc';
+import { StyleMolecule } from "../Molecules/StylesMolecule";
+import { Text } from "../Atoms/Text";
+import { Button } from "../Atoms/Button";
 
 export const Footer = () => {
   return (
     <footer className="w-full overflow-hidden">
       <div className="flex flex-col z-0 items-center footerBackground pt-10 mb-64 relative">
-        <div className="footerStyle1">
-          <span className="footerStyle2" />
-          <span className="footerStyle3" />
-        </div>
-        <h1 className="text-2xl text-white font-bold text-center mb-10 mx-10">
-          Publique e venda seus eventos na Plataforma Uticket
-        </h1>
-        <button className="w-[300px] bg-white hover:bg-gray-200 duration-100 text-blue-900 rounded-full text-md font-bold p-4 m-2">
-          Falar com consultor
-        </button>
+        <StyleMolecule />
+        <Text 
+          className="text-2xl text-white font-bold text-center mb-10 mx-10"
+          text="Publique e venda seus eventos na Plataforma Uticket"
+        />
+        <Button
+          className="w-[300px] bg-white hover:bg-gray-200 duration-100 text-blue-900 rounded-full text-md font-bold p-4 m-2"
+          text="Falar com consultor"
+        />
       </div>
       <div className="flex flex-col lg:pb-44 lg:flex-row-reverse mx-3 xl:m-auto xl:footerMargin text-gray-700">
         <div className="relative w-full h-[500px]">
