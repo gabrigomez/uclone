@@ -1,9 +1,9 @@
-import mobile from "../../assets/mobile.png";
-import desktop from "../../assets/desktop.png";
-import { FcIdea, FcNews, FcComboChart } from 'react-icons/fc';
-import { StyleMolecule } from "../Molecules/StylesMolecule";
 import { Text } from "../Atoms/Text";
 import { Button } from "../Atoms/Button";
+import { Previews } from "../Molecules/Previews";
+import { StyleMolecule } from "../Molecules/StylesMolecule";
+
+import { FcIdea, FcNews, FcComboChart } from 'react-icons/fc';
 
 export const Footer = () => {
   return (
@@ -20,22 +20,7 @@ export const Footer = () => {
         />
       </div>
       <div className="flex flex-col lg:pb-44 lg:flex-row-reverse mx-3 xl:m-auto xl:footerMargin text-gray-700">
-        <div className="relative w-full h-[500px]">
-          <div className="absolute p-1 top-0 w-[301px] z-20 h-[615px] rounded-[42px] shadow-2xl bg-slate-100">
-            <img
-              className="bg-white rounded-[37px]" 
-              src={mobile} 
-              alt="" 
-            />
-          </div>
-          <div className="absolute p-1 bottom-24 ml-[260px] z-10 rounded-[42px] w-[925px] h-[478px] shadow-2xl bg-slate-100">
-          <img
-              className="rounded-[37px]" 
-              src={desktop} 
-              alt="" 
-            />
-          </div>
-        </div>        
+        <Previews />
         <div className="mt-44 lg:mt-0 max-w-[500px] lg:mr-12">
           <p className="text-3xl text-center lg:text-start mb-10">
             <b>É rápido</b>, fácil e grátis
