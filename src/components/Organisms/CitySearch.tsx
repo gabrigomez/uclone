@@ -1,5 +1,5 @@
-import { CiLocationOn } from "react-icons/ci"
-import { RiCloseCircleLine } from "react-icons/ri"
+import { RiCloseCircleLine } from "react-icons/ri";
+import { CityLocationMolecule } from "../Molecules/CityLocationMolecule";
 
 interface CitySearchProps {
   isCitySearch: boolean,
@@ -10,12 +10,10 @@ interface CitySearchProps {
 export const CitySearch = ({isCitySearch, openCitySearch, setSearch} : CitySearchProps) => {
   return (
     <div className={`${isCitySearch ? 'w-full flex items-center z-10' : ''} flex items-center justify-center`}>
-      <div className={`${isCitySearch ? 'hidden' : 'flex items-center'}`} onClick={openCitySearch}>
-        <CiLocationOn className="text-white mr-2" />
-        <span className='text-white'>
-          Todas
-        </span>
-      </div>
+      <CityLocationMolecule 
+        isCitySearch={isCitySearch}
+        openCitySearch={openCitySearch}
+      />
       <div className={`${isCitySearch ? 'flex items-center w-full bg-orange-400' : 'hidden'}`}>
         <input 
           className={`${isCitySearch ? 'block w-full bg-orange-400 outline-none placeholder:text-white pl-2' : 'hidden'}`}
